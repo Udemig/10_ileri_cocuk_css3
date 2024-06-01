@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 İleri Çocuk Css3</title>
+    <!-- * Css Bağlantı -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Udemig Eğitim Akademisi</h1>
+    <span class="description">Yazılımın en iyi kurumuyuz.Aramıza katılın</span>
+
+    <!-- 
+      * Yukarıda görüldüğü üzre elemanlar satırı kaplama noktasında farklı davranıyor.Bazı elemanlar bulunduğu satırı tamamen kaplar bazısı ise sadece içeriği kadar alan kaplar. Bunun sebebi html elemanlarının inline yada block yapıda olmasıdır.
+
+      * Bulunduğu satırın tamamını kaplayan elemanlara 'Block Eleman' denir.
+      ör: h1,h2,h3,h4,h5,h6,p,div,...
+
+      * Bulunduğu satırda içeriğine göre genişlik kaplayan elemanlara 'İnline Eleman ' denir
+      ör: span,a,...
+
+
+     -->
+
+    <div class="kapsayıcı">kapsayıcı-1</div>
+    <span class="eleman">eleman-1</span>
+
+    <!-- Flexbox Yapısı -->
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h1>Flex Yapısı</h1>
+    <div class="content-1">
+      <span>İçerik-1</span>
+      <span>İçerik-2</span>
+      <span>İçerik-3</span>
+      <span>İçerik-4</span>
+      <span>İçerik-5</span>
+      <span>İçerik-6</span>
+      <span>İçerik-7</span>
+      <span>İçerik-8</span>
+      <span>İçerik-9</span>
+      <span>İçerik-10</span>
+    </div>
+    <h1>Justif-Content Default Durum</h1>
+    <div class="content-2">
+      <div>İçerik-1</div>
+      <div>İçerik-2</div>
+      <div>İçerik-3</div>
+      <div>İçerik-4</div>
+      <div>İçerik-5</div>
+      <div>İçerik-6</div>
+      <div>İçerik-7</div>
+      <div>İçerik-8</div>
+      <div>İçerik-9</div>
+      <div>İçerik-10</div>
+    </div>
+    <h1>Justif-Content:Center</h1>
+
+    <div class="content-3">
+      <div>İçerik-1</div>
+      <div>İçerik-2</div>
+      <div>İçerik-3</div>
+      <div>İçerik-4</div>
+      <div>İçerik-5</div>
+      <div>İçerik-6</div>
+      <div>İçerik-7</div>
+      <div>İçerik-8</div>
+      <div>İçerik-9</div>
+      <div>İçerik-10</div>
+    </div>
+    <h1>Justif-Content:End</h1>
+    <div class="content-4">
+      <div>İçerik-1</div>
+      <div>İçerik-2</div>
+      <div>İçerik-3</div>
+      <div>İçerik-4</div>
+      <div>İçerik-5</div>
+      <div>İçerik-6</div>
+      <div>İçerik-7</div>
+      <div>İçerik-8</div>
+      <div>İçerik-9</div>
+      <div>İçerik-10</div>
+    </div>
+    <h1>Justif-Content:</h1>
+    <p>justify-content: space-between;</p>
+    <div class="content-5">
+      <div>İçerik-1</div>
+      <div>İçerik-2</div>
+      <div>İçerik-3</div>
+      <div>İçerik-4</div>
+      <div>İçerik-5</div>
+      <div>İçerik-6</div>
+      <div>İçerik-7</div>
+      <div>İçerik-8</div>
+      <div>İçerik-9</div>
+      <div>İçerik-10</div>
+    </div>
+    <h1>justify-content: space-around;</h1>
+    <div class="content-6">
+      <div>İçerik-1</div>
+      <div>İçerik-2</div>
+      <div>İçerik-3</div>
+      <div>İçerik-4</div>
+      <div>İçerik-5</div>
+      <div>İçerik-6</div>
+      <div>İçerik-7</div>
+      <div>İçerik-8</div>
+      <div>İçerik-9</div>
+      <div>İçerik-10</div>
+    </div>
+    <h1>justify-content: space-evenly;</h1>
+    <div class="content-7">
+      <div>İçerik-1</div>
+      <div>İçerik-2</div>
+      <div>İçerik-3</div>
+      <div>İçerik-4</div>
+      <div>İçerik-5</div>
+      <div>İçerik-6</div>
+      <div>İçerik-7</div>
+      <div>İçerik-8</div>
+      <div>İçerik-9</div>
+      <div>İçerik-10</div>
+    </div>
+
+    <!-- Css3 Efekt Olayları -->
+    <div class="button-container">
+      <button class="btn buton-1">Buton-1</button>
+      <button class="btn buton-2">Buton-2</button>
+      <button class="btn buton-3">Buton-3</button>
+      <button class="btn buton-4">Buton-4</button>
+      <button class="btn buton-5">Buton-5</button>
+      <button class="btn buton-6">Buton-6</button>
+      <button class="btn buton-7">Buton-7</button>
+      <button class="btn buton-8">Buton-8</button>
+      <button class="btn buton-9">Buton-9</button>
+      <button class="btn buton-10">Buton-10</button>
+      <button class="btn buton-11">Buton-11</button>
+      <button class="btn buton-12">Buton-12</button>
+      <button class="btn buton-13">Buton-13</button>
+      <button class="btn buton-14">Buton-14</button>
+      <button class="btn buton-15">Buton-15</button>
+      <button class="btn buton-16">Buton-16</button>
+      <button class="btn buton-17">Buton-17</button>
+    </div>
+  </body>
+</html>

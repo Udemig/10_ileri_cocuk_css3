@@ -1,0 +1,208 @@
+.title {
+  background-color: green;
+}
+
+.description {
+  background-color: paleturquoise;
+}
+
+.kapsayıcı {
+  background-color: red;
+}
+
+.eleman {
+  background-color: orange;
+}
+
+.content-1 {
+  background-color: blueviolet;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column; /* satırı içi elemanlarda bu kısım default olarak row gelir. column yaparsak bu kısımı içeriğini sütun yaparak tüm alanı kaplamasını sağlarız.*/
+  gap: 10px;
+}
+
+.content-1 span {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.content-2 {
+  margin-top: 20px;
+  background-color: burlywood;
+  padding: 20px 25px;
+  display: flex; /* display:flex ile bir satırı tamamen kaplayan divler yanyana geldi. */
+  /* gap: 10px;
+  flex-direction: row-reverse; */
+}
+.content-2 div,
+.content-3 div,
+.content-4 div,
+.content-5 div,
+.content-6 div,
+.content-7 div,
+.content-8 div {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.content-3 {
+  margin-top: 20px;
+  background-color: burlywood;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-4 {
+  margin-top: 20px;
+  background-color: burlywood;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: end;
+}
+
+/* 
+display:flex ile yanyana getirilen elemanların bir satır içerisindeki durumunu justify-content ile değiştirebiliriz.(Elemanların ortada,başlangıç kısımında yada bitiş kısımına hizalanmasını)
+
+*/
+
+.content-5,
+.content-6,
+.content-7 {
+  margin-top: 20px;
+  background-color: red;
+  padding: 20px 25px;
+  display: flex;
+}
+
+.content-5 {
+  justify-content: space-between;
+  /* Satır içerisindeki yapıyı en sağa ve en sola yaslar.Geriye kalan elemanları bu ardaki kısıma yerleştir. */
+}
+
+.content-6 {
+  justify-content: space-around;
+  /* Satır içerisindeki yapıyı en sağ ve en sol kısımdan eşit aralık bırakarak yerleştirir.İçerideki elemanları ise buna göre hizalar. */
+}
+.content-7 {
+  justify-content: space-evenly;
+  /* Satır içerisindeki tüm elemanları eşit aralık bırakarak hizalar. */
+}
+
+.button-container {
+  background-color: blue;
+  margin-top: 50px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; /* Bu sayede kapsayıcıdan taşan kısımları alt satıra taşıdık.*/
+}
+
+.btn {
+  background-color: yellowgreen;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  width: 100px;
+  cursor: pointer; /* elemanın üzerine gelince imleci değiştirdik*/
+}
+/* Sözde seçiciler:
+
+-- hover: Bu yapı mouse'un elemanın üzerine geldiği zamanki durumu belirler.
+
+*/
+.buton-1:hover {
+  background-color: red;
+  color: yellow;
+  transform: scale(1.5);
+  /* Buradaki scale özelliği elemanın ölçeklendirilmesini ayarlar.
+     Default olarak 1 olan bu değer  değiştirilerek elemanın boyutlandırlması sağlanır.
+  */
+}
+
+.buton-2:hover {
+  background-color: hotpink;
+  color: blanchedalmond;
+}
+.buton-3:hover {
+  box-shadow: 10px 5px 20px orange;
+  /* birinci değer x eksenine ikinci değer y eksenine ve üçüncü değer ise verilen rengi dağıtmaya yarar. */
+}
+
+.btn:first-child {
+  background-color: brown;
+}
+
+.btn:last-child {
+  background-color: gray;
+}
+.btn:nth-child(14) {
+  background-color: chocolate;
+}
+.btn:nth-child(9) {
+  background-color: darkred;
+}
+/* 
+Belirli yapıdaki elemanların ister ilk ister son elemanına first-child ve last-child  şeklinde erişebiliriz.Bunun dışında kalan elemanlara ise nth-child ile erişiriz.
+
+
+*/
+
+.buton-4:hover {
+  transform: scaleX(1.1);
+  transform: scaleY(1.5);
+}
+
+.buton-5:hover {
+  transform: translateX(10px);
+}
+
+.buton-6:hover {
+  transform: translateY(20px);
+}
+
+/* translate ile elemanı x ve y ekseninde öteleyebiliyoruz.
+x ekseninde: 
+
++ ==> sağa öteler
+
+- ===> sola öteler
+
+
+
+y ekseninde
+
+
++ ==> aşşağı yönde öteler
+
+- ==> yukarı yönde öteler
+
+*/
+.buton-7:hover {
+  background-color: red;
+  transform: translateY(-20px);
+}
+
+.buton-8:hover {
+  background-color: orange;
+  transform: translateX(-20px);
+}
+.buton-9:hover {
+  background-color: green;
+  transform: rotate(90deg);
+}
+.buton-10:hover {
+  background-color: honeydew;
+  transform: rotate(359deg);
+}
+/* 
+rotate elemanı döndürmeye yarar.Bunu saat yönünde yapar.Ama (-)li değer verirsek bunu saat yönünün tersinde yapar. 
+
+*/
